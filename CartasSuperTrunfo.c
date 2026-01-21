@@ -9,7 +9,6 @@ int main() {
     // Dados primeira cidade
     printf("Nome da primeira cidade:\n");
     scanf(" %[^\n]", cidade1);  // lê linha com espaços Ex: São Paulo
-      while(getchar() != '\n');    // limpa buffer após linha para não pular próximas leituras
 
     printf("Estado:\n");
     scanf("%s", estado1);        
@@ -32,7 +31,6 @@ int main() {
     // Dados segunda cidade
     printf("\nNome da segunda cidade:\n");
     scanf(" %[^\n]", cidade2);   
-      while(getchar() != '\n');    // limpa buffer após linha para não pular próximas leituras
 
     printf("Estado:\n");
     scanf("%s", estado2);        
