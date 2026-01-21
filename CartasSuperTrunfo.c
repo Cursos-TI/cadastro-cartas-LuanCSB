@@ -3,7 +3,7 @@
 int main() {
    // Criação das variáveis
     int populacao1, p_turistico1, populacao2, p_turistico2;
-    float area1, pib1, area2, pib2;
+    float area1, pib1, area2, pib2, dp1, dp2, ppc1, ppc2;
     char cidade1[50], cidade2[50], estado1[10], estado2[10], codigo1[10], codigo2[10];
 
     // Dados primeira cidade
@@ -28,6 +28,14 @@ int main() {
     printf("Pontos turisticos:\n");
     scanf("%d", &p_turistico1);  
 
+    //calculando densidade populacional
+
+    dp1=populacao1/area1;
+
+    //calculando pib per capta
+
+    ppc1=pib1/populacao1;
+
     // Dados segunda cidade
     printf("\nNome da segunda cidade:\n");
     scanf(" %[^\n]", cidade2);   
@@ -50,6 +58,14 @@ int main() {
     printf("Pontos turisticos:\n");
     scanf("%d", &p_turistico2);
 
+    //calculando densidade populacional
+
+    dp2=populacao2/area2;
+
+    //calculando pib per capta
+
+    ppc2=pib2/populacao2;
+
     // Apresentação dos dados
     printf("\n--- Primeira cidade ---\n");
     printf("Nome da cidade: %s\n", cidade1);
@@ -59,6 +75,8 @@ int main() {
     printf("Area: %.2f\n", area1);
     printf("PIB: %.2f\n", pib1);
     printf("Pontos turisticos: %d\n", p_turistico1);
+    printf("Densiade populacional: %.2f\n", dp1);
+    printf("Pib per capta: %.2f\n",ppc1);
 
     printf("\n--- Segunda cidade ---\n");
     printf("Nome da cidade: %s\n", cidade2);
@@ -68,6 +86,8 @@ int main() {
     printf("Area: %.2f\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Pontos turisticos: %d\n", p_turistico2);
+    printf("Densidade populacional: %.2f\n", dp2);
+    printf("Pib per capta: %.2f\n",ppc2);
 
 return 0;
 } 
